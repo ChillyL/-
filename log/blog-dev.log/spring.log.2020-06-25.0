@@ -1,0 +1,601 @@
+2020-06-25 18:08:52.146  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 19380 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-25 18:08:52.154 DEBUG 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-25 18:08:52.154  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-25 18:08:52.357  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-25 18:08:52.360  INFO 19380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-25 18:08:55.108  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-25 18:08:55.199  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 0 JPA repository interfaces.
+2020-06-25 18:08:57.249  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 18:08:57.287  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 18:08:57.288  INFO 19380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 18:08:57.296  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-25 18:08:57.297  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-25 18:08:57.298  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-25 18:08:57.304  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-25 18:08:57.425  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-25 18:08:57.640  INFO 19380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 18:08:57.640  INFO 19380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5273 ms
+2020-06-25 18:08:59.582  INFO 19380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 18:08:59.693  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-25 18:09:01.311  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-25 18:09:01.880  INFO 19380 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-25 18:09:03.085  INFO 19380 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-25 18:09:04.078  INFO 19380 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-25 18:09:04.705  INFO 19380 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-25 18:09:05.003  WARN 19380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-25 18:09:05.341  INFO 19380 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-25 18:09:05.385  INFO 19380 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 18:09:06.046  INFO 19380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-25 18:09:07.326  INFO 19380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-25 18:09:07.408  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 18:09:07.411  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-25 18:09:07.412  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-25 18:09:07.425  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 17.306 seconds (JVM running for 21.726)
+2020-06-25 18:09:08.893  INFO 19380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-25 18:09:08.894  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-25 18:09:08.915  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-06-25 18:09:12.994  WARN 19380 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [370] milliseconds.
+2020-06-25 18:09:13.101 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-25 18:09:13.141 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-25 18:09:13.163 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-25 18:09:15.214 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 18:09:15.215 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 18:09:15.224 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 18:09:15.228 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 18:09:15.229 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 18:09:15.230 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-25 18:09:15.233  INFO 19380 --- [http-nio-8080-exec-8] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 18:09:18.390 ERROR 19380 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "admin/types-input": An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "type.getId()" (template: "admin/types-input" - line 81, col 48)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "type.getId()" (template: "admin/types-input" - line 81, col 48)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlVoidElement.handleOpenElementEnd(HtmlVoidElement.java:92)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getId() on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 69 common frames omitted
+
+2020-06-25 18:09:18.415 ERROR 19380 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getId() on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlVoidElement.handleOpenElementEnd(HtmlVoidElement.java:92)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-06-25 18:19:33.621  INFO 19380 --- [Thread-194] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 18:19:33.627  INFO 19380 --- [Thread-194] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-25 18:19:33.631  INFO 19380 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-25 18:19:33.659  INFO 19380 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-25 18:19:33.935  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 19380 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-25 18:19:33.935 DEBUG 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-25 18:19:33.935  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-25 18:19:34.435  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-25 18:19:34.453  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-06-25 18:19:35.030  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 18:19:35.032  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 18:19:35.033  INFO 19380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 18:19:35.035  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-25 18:19:35.036  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-25 18:19:35.038  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-25 18:19:35.043  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-25 18:19:35.046  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-25 18:19:35.093  INFO 19380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 18:19:35.093  INFO 19380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
+2020-06-25 18:19:35.383  INFO 19380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 18:19:35.404  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-06-25 18:19:35.441  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-06-25 18:19:35.448  INFO 19380 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-25 18:19:35.462  INFO 19380 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-25 18:19:35.477  INFO 19380 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-25 18:19:35.479  INFO 19380 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 18:19:35.880  WARN 19380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-25 18:19:36.349  INFO 19380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-25 18:19:37.101  INFO 19380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-25 18:19:37.167  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 18:19:37.168  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-25 18:19:37.168  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-25 18:19:37.182  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 3.409 seconds (JVM running for 651.482)
+2020-06-25 18:19:37.185  INFO 19380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-25 18:20:23.526  INFO 19380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-25 18:20:23.527  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-25 18:20:23.539  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-06-25 18:20:25.349 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-25 18:20:25.448 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-25 18:20:25.455 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-25 18:20:27.746 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 18:20:27.747 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 18:20:27.760 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 18:20:27.761 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 18:20:27.761 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 18:20:27.763 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-25 18:20:27.764  INFO 19380 --- [http-nio-8080-exec-4] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 18:20:35.865 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.getTypeByName    : ==>  Preparing: select * from type where type_name =?; 
+2020-06-25 18:20:35.865 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.getTypeByName    : ==> Parameters: 奇思妙想(String)
+2020-06-25 18:20:35.868 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.getTypeByName    : <==      Total: 1
+2020-06-25 18:20:39.289 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.getTypeByName    : ==>  Preparing: select * from type where type_name =?; 
+2020-06-25 18:20:39.290 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.getTypeByName    : ==> Parameters: (String)
+2020-06-25 18:20:39.291 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.getTypeByName    : <==      Total: 0
+2020-06-25 18:20:39.292 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.saveType      : ==>  Preparing: insert into type values (?,?); 
+2020-06-25 18:20:39.292 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.saveType      : ==> Parameters: null, (String)
+2020-06-25 18:20:39.321 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.saveType      : <==    Updates: 1
+2020-06-25 18:20:39.330 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 18:20:39.331 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 18:20:39.332 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 18:20:39.333 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 18:20:39.333 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 18:20:39.335 DEBUG 19380 --- [http-nio-8080-exec-2] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 4
+2020-06-25 18:20:39.336  INFO 19380 --- [http-nio-8080-exec-2] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=4, pages=1, reasonable=false, pageSizeZero=false}[Type{id=6, name=''}, Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 18:36:30.959  INFO 19380 --- [Thread-197] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 18:36:30.963  INFO 19380 --- [Thread-197] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-25 18:36:30.965  INFO 19380 --- [Thread-197] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-06-25 18:36:30.984  INFO 19380 --- [Thread-197] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-06-25 18:36:31.242  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 19380 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-25 18:36:31.244 DEBUG 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-25 18:36:31.244  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-25 18:36:32.365  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-25 18:36:32.383  INFO 19380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-06-25 18:36:32.815  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 18:36:32.816  INFO 19380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 18:36:32.817  INFO 19380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 18:36:32.817  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-25 18:36:32.818  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-25 18:36:32.818  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-25 18:36:32.818  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-25 18:36:32.861  INFO 19380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-25 18:36:32.897  INFO 19380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 18:36:32.897  INFO 19380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1648 ms
+2020-06-25 18:36:33.216  INFO 19380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 18:36:33.283  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-06-25 18:36:33.309  INFO 19380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-06-25 18:36:33.318  INFO 19380 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-25 18:36:33.347  INFO 19380 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-25 18:36:33.365  INFO 19380 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-25 18:36:33.366  INFO 19380 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 18:36:33.666  WARN 19380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-25 18:36:34.818  INFO 19380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-25 18:36:35.663  INFO 19380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-25 18:36:35.701  INFO 19380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 18:36:35.705  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-25 18:36:35.709  INFO 19380 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-25 18:36:35.715  INFO 19380 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 4.562 seconds (JVM running for 1670.015)
+2020-06-25 18:36:35.716  INFO 19380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-25 18:40:04.986  INFO 19380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-25 18:40:04.986  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-25 18:40:05.000  INFO 19380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-06-25 18:40:07.297 DEBUG 19380 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-25 18:40:07.298 DEBUG 19380 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-25 18:40:07.314 DEBUG 19380 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-25 18:40:08.998 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 18:40:08.998 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 18:40:09.004 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 18:40:09.006 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 18:40:09.007 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 18:40:09.009 DEBUG 19380 --- [http-nio-8080-exec-8] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 4
+2020-06-25 18:40:09.009  INFO 19380 --- [http-nio-8080-exec-8] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=4, pages=1, reasonable=false, pageSizeZero=false}[Type{id=6, name=''}, Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 18:40:10.661 ERROR 19380 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "admin/types-input": An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#fields.hasErrors('name')" (template: "admin/types-input" - line 95, col 50)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#fields.hasErrors('name')" (template: "admin/types-input" - line 95, col 50)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'name' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.checkErrors(FieldUtils.java:212)
+	at org.thymeleaf.spring5.util.FieldUtils.hasErrors(FieldUtils.java:71)
+	at org.thymeleaf.spring5.expression.Fields.hasErrors(Fields.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:129)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:55)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:386)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 71 common frames omitted
+
+2020-06-25 18:40:10.662 ERROR 19380 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/types-input.html]")] with root cause
+
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'name' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.checkErrors(FieldUtils.java:212)
+	at org.thymeleaf.spring5.util.FieldUtils.hasErrors(FieldUtils.java:71)
+	at org.thymeleaf.spring5.expression.Fields.hasErrors(Fields.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:129)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:55)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:386)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-06-25 19:31:22.864 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-25 19:31:22.865 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-25 19:31:22.872 DEBUG 19380 --- [http-nio-8080-exec-4] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-25 19:31:24.617 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 19:31:24.618 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 19:31:24.624 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 19:31:24.626 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 19:31:24.628 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 19:31:24.630 DEBUG 19380 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 4
+2020-06-25 19:31:24.631  INFO 19380 --- [http-nio-8080-exec-9] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=4, pages=1, reasonable=false, pageSizeZero=false}[Type{id=6, name=''}, Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 19:31:27.833 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.blog.mapper.TypeMapper.deleteType    : ==>  Preparing: delete from type where type_id =?; 
+2020-06-25 19:31:27.834 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.blog.mapper.TypeMapper.deleteType    : ==> Parameters: 6(Long)
+2020-06-25 19:31:27.851 DEBUG 19380 --- [http-nio-8080-exec-7] c.c.blog.mapper.TypeMapper.deleteType    : <==    Updates: 1
+2020-06-25 19:31:27.880 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 19:31:27.880 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 19:31:27.881 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 19:31:27.882 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 19:31:27.882 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 19:31:27.883 DEBUG 19380 --- [http-nio-8080-exec-10] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-25 19:31:27.884  INFO 19380 --- [http-nio-8080-exec-10] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 21:08:28.317  INFO 26956 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 26956 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-25 21:08:28.321 DEBUG 26956 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-25 21:08:28.322  INFO 26956 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-25 21:08:28.483  INFO 26956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-25 21:08:28.484  INFO 26956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-25 21:08:30.547  INFO 26956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-25 21:08:30.618  INFO 26956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 0 JPA repository interfaces.
+2020-06-25 21:08:32.417  INFO 26956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 21:08:32.450  INFO 26956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 21:08:32.451  INFO 26956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 21:08:32.453  INFO 26956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-25 21:08:32.453  INFO 26956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-25 21:08:32.454  INFO 26956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-25 21:08:32.454  INFO 26956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-25 21:08:32.561  INFO 26956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-25 21:08:32.754  INFO 26956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 21:08:32.755  INFO 26956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4271 ms
+2020-06-25 21:08:33.331  INFO 26956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 21:08:33.396  INFO 26956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-25 21:08:33.943  INFO 26956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-25 21:08:34.154  INFO 26956 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-25 21:08:34.400  INFO 26956 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-25 21:08:35.152  INFO 26956 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-25 21:08:35.446  WARN 26956 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-25 21:08:35.509  INFO 26956 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-25 21:08:36.022  INFO 26956 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-25 21:08:36.043  INFO 26956 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-25 21:08:36.183  INFO 26956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-25 21:08:36.860  INFO 26956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-25 21:08:36.988  INFO 26956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 21:08:36.992  INFO 26956 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-25 21:08:36.993  INFO 26956 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-25 21:08:37.006  INFO 26956 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 10.301 seconds (JVM running for 13.377)
+2020-06-25 21:10:27.076  INFO 26956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-25 21:10:27.077  INFO 26956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-25 21:10:27.113  INFO 26956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
+2020-06-25 21:10:27.578  WARN 26956 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [428] milliseconds.
+2020-06-25 21:10:31.565 DEBUG 26956 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-25 21:10:31.596 DEBUG 26956 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-25 21:10:31.610 DEBUG 26956 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-25 21:10:34.351 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 21:10:34.352 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 21:10:34.355 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 21:10:34.360 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 21:10:34.361 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 21:10:34.362 DEBUG 26956 --- [http-nio-8080-exec-5] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-25 21:10:34.364  INFO 26956 --- [http-nio-8080-exec-5] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-25 21:11:49.079 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-25 21:11:49.080 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-25 21:11:49.091 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-25 21:11:49.092 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-25 21:11:49.093 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-25 21:11:49.095 DEBUG 26956 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-25 21:11:49.095  INFO 26956 --- [http-nio-8080-exec-9] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}

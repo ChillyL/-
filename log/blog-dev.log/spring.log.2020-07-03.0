@@ -1,0 +1,359 @@
+2020-07-03 12:09:30.552  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 13296 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 12:09:30.614 DEBUG 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 12:09:30.615  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 12:09:30.878  INFO 13296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-03 12:09:30.879  INFO 13296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-03 12:09:33.850  INFO 13296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:09:33.955  INFO 13296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 0 JPA repository interfaces.
+2020-07-03 12:09:35.508  INFO 13296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:09:35.558  INFO 13296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 12:09:35.558  INFO 13296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 12:09:35.566  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 12:09:35.567  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 12:09:35.567  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 12:09:35.568  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 12:09:35.659  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 12:09:35.905  INFO 13296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 12:09:35.905  INFO 13296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5025 ms
+2020-07-03 12:09:36.353  INFO 13296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:09:36.392  INFO 13296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-03 12:09:36.941  INFO 13296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-03 12:09:37.098  INFO 13296 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:09:37.436  INFO 13296 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-03 12:09:38.177  INFO 13296 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 12:09:38.596  INFO 13296 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 12:09:38.710  WARN 13296 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:09:39.210  INFO 13296 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:09:39.278  INFO 13296 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:09:39.478  INFO 13296 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 12:09:40.535  INFO 13296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 12:09:40.607  INFO 13296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:09:40.609  INFO 13296 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:09:40.609  INFO 13296 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 12:09:40.634  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 11.469 seconds (JVM running for 14.814)
+2020-07-03 12:10:42.119  INFO 13296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:10:42.119  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:10:42.151  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-07-03 12:10:50.560  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:10:50.572  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Result : index
+2020-07-03 12:10:50.573  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:11:21.103  INFO 13296 --- [Thread-194] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:11:21.106  INFO 13296 --- [Thread-194] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:11:21.108  INFO 13296 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-03 12:11:21.126  INFO 13296 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-03 12:11:21.294  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 13296 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 12:11:21.296 DEBUG 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 12:11:21.297  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 12:11:22.036  INFO 13296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:11:22.049  INFO 13296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 JPA repository interfaces.
+2020-07-03 12:11:22.467  INFO 13296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:11:22.470  INFO 13296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 12:11:22.471  INFO 13296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 12:11:22.472  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 12:11:22.472  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 12:11:22.472  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 12:11:22.473  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 12:11:22.474  INFO 13296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 12:11:22.508  INFO 13296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 12:11:22.509  INFO 13296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
+2020-07-03 12:11:22.724  INFO 13296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:11:22.772  INFO 13296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-07-03 12:11:22.832  INFO 13296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-07-03 12:11:22.848  INFO 13296 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:11:22.867  INFO 13296 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 12:11:22.886  INFO 13296 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:11:22.886  INFO 13296 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:11:23.302  WARN 13296 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:11:24.023  INFO 13296 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 12:11:25.554  INFO 13296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 12:11:25.599  INFO 13296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:11:25.601  INFO 13296 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:11:25.602  INFO 13296 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 12:11:25.615  INFO 13296 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 4.4 seconds (JVM running for 119.795)
+2020-07-03 12:11:25.627  INFO 13296 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-03 12:11:26.074  INFO 13296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:11:26.075  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:11:26.110  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-07-03 12:11:26.117  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:11:26.122  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:11:26.124  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:11:29.546  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:11:29.546  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:11:29.547  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:11:31.894  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:11:31.895  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:11:31.895  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:13:13.551  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:13:13.551  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:13:13.551  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:13:16.248  INFO 13296 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:13:16.248  INFO 13296 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:13:16.248  INFO 13296 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:13:21.422  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:13:21.422  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:13:21.423  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:13:46.167  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:13:46.167  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:13:46.167  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:13:49.305  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:13:49.305  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:13:49.305  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:14:07.241  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:14:07.241  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:14:07.241  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:14:44.182  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:14:44.183  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:14:44.183  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:15:53.393  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:15:53.393  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:15:53.393  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:15:56.785  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:15:56.785  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:15:56.786  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:17:56.374  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:17:56.374  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:17:56.374  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:17:58.637  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:17:58.637  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:17:58.637  INFO 13296 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:18:36.653  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:18:36.654  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:18:36.654  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:18:39.203  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:18:39.203  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:18:39.204  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:18:41.005  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:18:41.006  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:18:41.006  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:19:16.106  INFO 13296 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:19:16.106  INFO 13296 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:19:16.107  INFO 13296 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:19:19.010  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:19:19.011  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:19:19.011  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:19:22.609  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:19:22.609  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:19:22.609  INFO 13296 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:19:28.407  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:19:28.407  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:19:28.407  INFO 13296 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:30:02.390  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:30:02.391  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:30:02.391  INFO 13296 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:34:18.421  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:34:18.422  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:34:18.422  INFO 13296 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:34:23.466  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:34:23.466  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:34:23.466  INFO 13296 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:53:14.327  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:53:14.327  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:53:14.327  INFO 13296 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:54:15.779  INFO 13296 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:54:15.780  INFO 13296 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:54:15.780  INFO 13296 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 12:56:48.795  INFO 2696 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 2696 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 12:56:48.803 DEBUG 2696 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 12:56:48.804  INFO 2696 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 12:56:49.122  INFO 2696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-03 12:56:49.122  INFO 2696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-03 12:56:51.149  INFO 2696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 12:56:51.208  INFO 2696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 JPA repository interfaces.
+2020-07-03 12:56:52.302  INFO 2696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 12:56:52.313  INFO 2696 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 12:56:52.313  INFO 2696 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 12:56:52.315  INFO 2696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 12:56:52.316  INFO 2696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 12:56:52.316  INFO 2696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 12:56:52.316  INFO 2696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 12:56:52.321  INFO 2696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 12:56:52.414  INFO 2696 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 12:56:52.414  INFO 2696 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3292 ms
+2020-07-03 12:56:52.720  INFO 2696 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 12:56:52.749  INFO 2696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-03 12:56:53.171  INFO 2696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-03 12:56:53.238  INFO 2696 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 12:56:53.312  INFO 2696 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-03 12:56:53.561  INFO 2696 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 12:56:53.743  INFO 2696 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 12:56:53.911  WARN 2696 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 12:56:53.996  INFO 2696 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 12:56:54.005  INFO 2696 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 12:56:54.318  INFO 2696 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 12:56:54.801  INFO 2696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 12:56:54.856  INFO 2696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 12:56:54.858  INFO 2696 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 12:56:54.859  INFO 2696 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 12:56:54.869  INFO 2696 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 7.183 seconds (JVM running for 9.44)
+2020-07-03 12:59:56.876  INFO 2696 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 12:59:56.877  INFO 2696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 12:59:56.895  INFO 2696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-07-03 12:59:56.972  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 12:59:56.980  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 12:59:56.981  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:01:23.589  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:01:23.590  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:01:23.590  INFO 2696 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:01:31.552  INFO 2696 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:01:31.553  INFO 2696 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:01:31.553  INFO 2696 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:02:27.624  INFO 2696 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:02:27.624  INFO 2696 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:02:27.624  INFO 2696 --- [http-nio-8080-exec-8] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:02:44.580  INFO 2696 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:02:44.580  INFO 2696 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:02:44.580  INFO 2696 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:04:51.784  INFO 2696 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:04:51.784  INFO 2696 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:04:51.784  INFO 2696 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:06:26.982  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:06:26.982  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:06:26.982  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:15:00.489  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:15:00.490  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:15:00.490  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 13:28:22.155  INFO 2696 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 13:28:22.155  INFO 2696 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 13:28:22.155  INFO 2696 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 15:16:02.973  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 15:16:02.981  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 15:16:02.982  INFO 2696 --- [http-nio-8080-exec-3] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 17:19:48.764  INFO 808 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 808 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 17:19:48.787 DEBUG 808 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 17:19:48.790  INFO 808 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 17:19:49.082  INFO 808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-03 17:19:49.082  INFO 808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-03 17:19:52.087  INFO 808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 17:19:52.184  INFO 808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 0 JPA repository interfaces.
+2020-07-03 17:19:53.978  INFO 808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 17:19:54.050  INFO 808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 17:19:54.051  INFO 808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 17:19:54.058  INFO 808 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 17:19:54.059  INFO 808 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 17:19:54.060  INFO 808 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 17:19:54.060  INFO 808 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 17:19:54.161  INFO 808 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 17:19:54.371  INFO 808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 17:19:54.374  INFO 808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5290 ms
+2020-07-03 17:19:54.987  INFO 808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 17:19:55.054  INFO 808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-03 17:19:55.517  INFO 808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-03 17:19:55.699  INFO 808 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 17:19:55.997  INFO 808 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-03 17:19:56.636  INFO 808 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 17:19:57.075  INFO 808 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 17:19:57.270  WARN 808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 17:19:57.622  INFO 808 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 17:19:57.687  INFO 808 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 17:19:58.035  INFO 808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 17:19:59.083  INFO 808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 17:19:59.153  INFO 808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 17:19:59.155  INFO 808 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 17:19:59.155  INFO 808 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 17:19:59.169  INFO 808 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 12.345 seconds (JVM running for 14.989)
+2020-07-03 17:24:01.683  INFO 808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 17:24:01.683  INFO 808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 17:24:01.724  INFO 808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2020-07-03 17:24:09.155  INFO 808 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 17:24:09.164  INFO 808 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 17:24:09.165  INFO 808 --- [http-nio-8080-exec-6] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 17:24:18.138  INFO 808 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 17:24:18.138  INFO 808 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 17:24:18.138  INFO 808 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:12:26.889  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 4416 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 23:12:26.916 DEBUG 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 23:12:26.917  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 23:12:27.214  INFO 4416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-03 23:12:27.216  INFO 4416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-03 23:12:30.531  INFO 4416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 23:12:30.601  INFO 4416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 JPA repository interfaces.
+2020-07-03 23:12:32.645  INFO 4416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 23:12:32.699  INFO 4416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 23:12:32.702  INFO 4416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 23:12:32.706  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 23:12:32.706  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 23:12:32.708  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 23:12:32.720  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 23:12:32.834  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 23:12:33.134  INFO 4416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 23:12:33.135  INFO 4416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5919 ms
+2020-07-03 23:12:33.801  INFO 4416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 23:12:33.865  INFO 4416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-03 23:12:34.566  INFO 4416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-03 23:12:34.906  INFO 4416 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 23:12:35.312  INFO 4416 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-03 23:12:36.330  INFO 4416 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 23:12:36.868  INFO 4416 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 23:12:37.248  WARN 4416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 23:12:37.567  INFO 4416 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 23:12:37.632  INFO 4416 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 23:12:38.295  INFO 4416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 23:12:39.765  INFO 4416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 23:12:39.861  INFO 4416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 23:12:39.863  INFO 4416 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 23:12:39.864  INFO 4416 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 23:12:39.902  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 15.162 seconds (JVM running for 20.671)
+2020-07-03 23:12:41.777  INFO 4416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 23:12:41.777  INFO 4416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 23:12:41.812  INFO 4416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2020-07-03 23:14:15.809  INFO 4416 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:14:15.820  INFO 4416 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:14:15.821  INFO 4416 --- [http-nio-8080-exec-2] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:14:18.996  INFO 4416 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:14:18.996  INFO 4416 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:14:18.996  INFO 4416 --- [http-nio-8080-exec-10] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:15:44.406  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:15:44.406  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:15:44.407  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:15:48.386  INFO 4416 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:15:48.386  INFO 4416 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:15:48.387  INFO 4416 --- [http-nio-8080-exec-9] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:16:18.874  INFO 4416 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:16:18.874  INFO 4416 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:16:18.874  INFO 4416 --- [http-nio-8080-exec-4] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:16:22.082  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:16:22.082  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : Result : about
+2020-07-03 23:16:22.082  INFO 4416 --- [http-nio-8080-exec-7] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:17:25.523  INFO 4416 --- [Thread-194] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 23:17:25.526  INFO 4416 --- [Thread-194] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-03 23:17:25.528  INFO 4416 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-03 23:17:25.548  INFO 4416 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-03 23:17:25.688  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 4416 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-07-03 23:17:25.688 DEBUG 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-03 23:17:25.688  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-07-03 23:17:26.915  INFO 4416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 23:17:26.926  INFO 4416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2020-07-03 23:17:27.272  INFO 4416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 23:17:27.275  INFO 4416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 23:17:27.275  INFO 4416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 23:17:27.276  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-07-03 23:17:27.276  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-07-03 23:17:27.276  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-07-03 23:17:27.277  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-07-03 23:17:27.277  INFO 4416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-07-03 23:17:27.300  INFO 4416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 23:17:27.301  INFO 4416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1609 ms
+2020-07-03 23:17:27.619  INFO 4416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 23:17:27.678  INFO 4416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-07-03 23:17:27.709  INFO 4416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-07-03 23:17:27.738  INFO 4416 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 23:17:27.748  INFO 4416 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-03 23:17:27.764  INFO 4416 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 23:17:27.765  INFO 4416 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 23:17:28.124  WARN 4416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 23:17:28.909  INFO 4416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-03 23:17:29.905  INFO 4416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-03 23:17:29.928  INFO 4416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 23:17:29.930  INFO 4416 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 23:17:29.932  INFO 4416 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 23:17:29.940  INFO 4416 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 4.313 seconds (JVM running for 310.709)
+2020-07-03 23:17:29.942  INFO 4416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-03 23:17:30.024  INFO 4416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 23:17:30.024  INFO 4416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 23:17:30.038  INFO 4416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-07-03 23:17:30.045  INFO 4416 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:17:30.054  INFO 4416 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : Result : index
+2020-07-03 23:17:30.054  INFO 4416 --- [http-nio-8080-exec-1] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------
+2020-07-03 23:17:35.532  INFO 4416 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Request : {url = http://localhost:8080/index/about', ip = 0:0:0:0:0:0:0:1', classMethod = com.chilly.blog.controller.indexController.about', args = []}
+2020-07-03 23:17:35.533  INFO 4416 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : Result : index
+2020-07-03 23:17:35.533  INFO 4416 --- [http-nio-8080-exec-5] com.chilly.blog.aspect.LogAspect         : ----------------------deAfter------------------------

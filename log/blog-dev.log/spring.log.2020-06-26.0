@@ -1,0 +1,245 @@
+2020-06-26 00:19:08.255  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 24256 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-26 00:19:08.290 DEBUG 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-26 00:19:08.291  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-26 00:19:08.460  INFO 24256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-26 00:19:08.460  INFO 24256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-26 00:19:10.580  INFO 24256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-26 00:19:10.620  INFO 24256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 JPA repository interfaces.
+2020-06-26 00:19:12.112  INFO 24256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-26 00:19:12.138  INFO 24256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-26 00:19:12.139  INFO 24256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-26 00:19:12.142  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-26 00:19:12.143  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-26 00:19:12.144  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-26 00:19:12.145  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-26 00:19:12.232  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-26 00:19:12.517  INFO 24256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-26 00:19:12.519  INFO 24256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4051 ms
+2020-06-26 00:19:12.981  INFO 24256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-26 00:19:13.039  INFO 24256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-26 00:19:13.532  INFO 24256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-26 00:19:13.804  INFO 24256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-26 00:19:14.086  INFO 24256 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-26 00:19:14.524  INFO 24256 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-26 00:19:14.864  WARN 24256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-26 00:19:14.898  INFO 24256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-26 00:19:15.324  INFO 24256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-26 00:19:15.352  INFO 24256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-26 00:19:15.583  INFO 24256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-26 00:19:16.311  INFO 24256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-26 00:19:16.396  INFO 24256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-26 00:19:16.398  INFO 24256 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-26 00:19:16.398  INFO 24256 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-26 00:19:16.425  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 9.713 seconds (JVM running for 12.021)
+2020-06-26 00:19:38.923  INFO 24256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-26 00:19:38.923  INFO 24256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-26 00:19:38.942  INFO 24256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-06-26 00:19:44.113  WARN 24256 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [406] milliseconds.
+2020-06-26 00:19:44.188 DEBUG 24256 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-26 00:19:44.234 DEBUG 24256 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-26 00:19:44.255 DEBUG 24256 --- [http-nio-8080-exec-1] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-26 00:19:46.364 DEBUG 24256 --- [http-nio-8080-exec-3] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-06-26 00:19:46.364 DEBUG 24256 --- [http-nio-8080-exec-3] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==> Parameters: 
+2020-06-26 00:19:46.434 DEBUG 24256 --- [http-nio-8080-exec-3] c.c.blog.mapper.TagMapper.listTag_COUNT  : <==      Total: 1
+2020-06-26 00:19:46.436  INFO 24256 --- [http-nio-8080-exec-3] c.c.blog.controller.admin.TagController  : pageInfo:PageInfo{pageNum=1, pageSize=10, size=0, startRow=0, endRow=0, total=0, pages=0, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=0, pages=0, reasonable=false, pageSizeZero=false}[], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=0, navigateLastPage=0, navigatepageNums=[]}
+2020-06-26 00:19:51.287  INFO 24256 --- [http-nio-8080-exec-5] c.c.b.h.ControllerExceptionHandler       : Hello !!  你又出错了 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2020-06-26 00:19:51.322 ERROR 24256 --- [http-nio-8080-exec-5] c.c.b.h.ControllerExceptionHandler       : Requst URL : http://localhost:8080/admin/tags/input , Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-06-26 00:19:51.324  WARN 24256 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-06-26 00:21:56.703  INFO 24256 --- [Thread-194] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-26 00:21:56.715  INFO 24256 --- [Thread-194] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-26 00:21:56.718  INFO 24256 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-26 00:21:56.736  INFO 24256 --- [Thread-194] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-26 00:21:56.988  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 24256 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-26 00:21:56.989 DEBUG 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-26 00:21:56.989  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-26 00:21:57.683  INFO 24256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-26 00:21:57.691  INFO 24256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 JPA repository interfaces.
+2020-06-26 00:21:58.124  INFO 24256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-26 00:21:58.125  INFO 24256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-26 00:21:58.126  INFO 24256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-26 00:21:58.129  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-26 00:21:58.131  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-26 00:21:58.131  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-26 00:21:58.132  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-26 00:21:58.134  INFO 24256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-26 00:21:58.165  INFO 24256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-26 00:21:58.166  INFO 24256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2020-06-26 00:21:58.369  INFO 24256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-26 00:21:58.388  INFO 24256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-06-26 00:21:58.408  INFO 24256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-06-26 00:21:58.418  INFO 24256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-26 00:21:58.424  INFO 24256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-26 00:21:58.440  INFO 24256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-26 00:21:58.441  INFO 24256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-26 00:21:58.689  WARN 24256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-26 00:21:59.155  INFO 24256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-26 00:22:00.282  INFO 24256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-26 00:22:00.344  INFO 24256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-26 00:22:00.400  INFO 24256 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-26 00:22:00.403  INFO 24256 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-26 00:22:00.418  INFO 24256 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 3.565 seconds (JVM running for 176.014)
+2020-06-26 00:22:00.422  INFO 24256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-26 00:22:07.529  INFO 24256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-26 00:22:07.529  INFO 24256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-26 00:22:07.545  INFO 24256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-06-26 00:22:09.444 DEBUG 24256 --- [http-nio-8080-exec-5] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-26 00:22:09.445 DEBUG 24256 --- [http-nio-8080-exec-5] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-26 00:22:09.449 DEBUG 24256 --- [http-nio-8080-exec-5] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-26 00:22:10.956 DEBUG 24256 --- [http-nio-8080-exec-8] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-06-26 00:22:10.956 DEBUG 24256 --- [http-nio-8080-exec-8] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==> Parameters: 
+2020-06-26 00:22:10.960 DEBUG 24256 --- [http-nio-8080-exec-8] c.c.blog.mapper.TagMapper.listTag_COUNT  : <==      Total: 1
+2020-06-26 00:22:10.961  INFO 24256 --- [http-nio-8080-exec-8] c.c.blog.controller.admin.TagController  : pageInfo:PageInfo{pageNum=1, pageSize=10, size=0, startRow=0, endRow=0, total=0, pages=0, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=0, pages=0, reasonable=false, pageSizeZero=false}[], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=0, navigateLastPage=0, navigatepageNums=[]}
+2020-06-26 00:26:24.876  INFO 16692 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 16692 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-26 00:26:24.880 DEBUG 16692 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-26 00:26:24.881  INFO 16692 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-26 00:26:25.086  INFO 16692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-26 00:26:25.092  INFO 16692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-26 00:26:26.926  INFO 16692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-26 00:26:26.962  INFO 16692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2020-06-26 00:26:28.041  INFO 16692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-26 00:26:28.054  INFO 16692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-26 00:26:28.054  INFO 16692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-26 00:26:28.057  INFO 16692 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-26 00:26:28.058  INFO 16692 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-26 00:26:28.058  INFO 16692 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-26 00:26:28.058  INFO 16692 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-26 00:26:28.061  INFO 16692 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-26 00:26:28.203  INFO 16692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-26 00:26:28.204  INFO 16692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3111 ms
+2020-06-26 00:26:28.534  INFO 16692 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-26 00:26:28.559  INFO 16692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-26 00:26:29.005  INFO 16692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-26 00:26:29.105  INFO 16692 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-26 00:26:29.206  INFO 16692 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-26 00:26:29.463  INFO 16692 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-26 00:26:29.658  INFO 16692 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-26 00:26:29.710  WARN 16692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-26 00:26:29.962  INFO 16692 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-26 00:26:29.985  INFO 16692 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-26 00:26:30.270  INFO 16692 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-26 00:26:30.809  INFO 16692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-26 00:26:30.874  INFO 16692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-26 00:26:30.875  INFO 16692 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-26 00:26:30.876  INFO 16692 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-26 00:26:30.891  INFO 16692 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 7.018 seconds (JVM running for 8.945)
+2020-06-26 00:26:38.840  INFO 16692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-26 00:26:38.841  INFO 16692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-26 00:26:38.861  INFO 16692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-06-26 00:26:41.778  WARN 16692 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [336] milliseconds.
+2020-06-26 00:26:41.807 DEBUG 16692 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : ==>  Preparing: select * from user where user_username =? and user_password =?; 
+2020-06-26 00:26:41.830 DEBUG 16692 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : ==> Parameters: linxz(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-06-26 00:26:41.862 DEBUG 16692 --- [http-nio-8080-exec-7] c.c.b.m.AdminLoginMapper.adminLogin      : <==      Total: 1
+2020-06-26 00:26:44.509 DEBUG 16692 --- [http-nio-8080-exec-10] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-06-26 00:26:44.510 DEBUG 16692 --- [http-nio-8080-exec-10] c.c.blog.mapper.TagMapper.listTag_COUNT  : ==> Parameters: 
+2020-06-26 00:26:44.514 DEBUG 16692 --- [http-nio-8080-exec-10] c.c.blog.mapper.TagMapper.listTag_COUNT  : <==      Total: 1
+2020-06-26 00:26:44.518  INFO 16692 --- [http-nio-8080-exec-10] c.c.blog.controller.admin.TagController  : pageInfo:PageInfo{pageNum=1, pageSize=10, size=0, startRow=0, endRow=0, total=0, pages=0, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=0, pages=0, reasonable=false, pageSizeZero=false}[], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=0, navigateLastPage=0, navigatepageNums=[]}
+2020-06-26 00:28:59.942 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-26 00:28:59.943 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-26 00:28:59.957 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-26 00:28:59.960 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-26 00:28:59.961 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-26 00:28:59.965 DEBUG 16692 --- [http-nio-8080-exec-6] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-26 00:28:59.966  INFO 16692 --- [http-nio-8080-exec-6] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-26 00:32:22.642 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-26 00:32:22.642 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-26 00:32:22.645 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-26 00:32:22.647 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-26 00:32:22.647 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-26 00:32:22.651 DEBUG 16692 --- [http-nio-8080-exec-3] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 3
+2020-06-26 00:32:22.652  INFO 16692 --- [http-nio-8080-exec-3] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-26 00:32:27.885 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.getTypeByName    : ==>  Preparing: select * from type where type_name =?; 
+2020-06-26 00:32:27.885 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.getTypeByName    : ==> Parameters: chillycode(String)
+2020-06-26 00:32:27.888 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.b.mapper.TypeMapper.getTypeByName    : <==      Total: 0
+2020-06-26 00:32:27.889 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.saveType      : ==>  Preparing: insert into type values (?,?); 
+2020-06-26 00:32:27.889 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.saveType      : ==> Parameters: null, chillycode(String)
+2020-06-26 00:32:27.907 DEBUG 16692 --- [http-nio-8080-exec-4] c.c.blog.mapper.TypeMapper.saveType      : <==    Updates: 1
+2020-06-26 00:32:27.966 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==>  Preparing: SELECT count(0) FROM type 
+2020-06-26 00:32:27.966 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : ==> Parameters: 
+2020-06-26 00:32:27.968 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.b.mapper.TypeMapper.listType_COUNT   : <==      Total: 1
+2020-06-26 00:32:27.969 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==>  Preparing: SELECT * FROM type order by type_id desc LIMIT ? 
+2020-06-26 00:32:27.970 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : ==> Parameters: 10(Integer)
+2020-06-26 00:32:27.972 DEBUG 16692 --- [http-nio-8080-exec-9] c.c.blog.mapper.TypeMapper.listType      : <==      Total: 4
+2020-06-26 00:32:27.972  INFO 16692 --- [http-nio-8080-exec-9] c.c.b.controller.admin.TypeController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=4, pages=1, reasonable=false, pageSizeZero=false}[Type{id=7, name='chillycode'}, Type{id=5, name='乱七八糟'}, Type{id=3, name='奇思妙想'}, Type{id=1, name='Java'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-06-26 00:32:56.779  INFO 23680 --- [restartedMain] com.chilly.blog.BlogApplication          : Starting BlogApplication on DESKTOP-4AJAGUQ with PID 23680 (E:\MyWebDome\blog\target\classes started by 13267 in E:\MyWebDome\blog)
+2020-06-26 00:32:56.784 DEBUG 23680 --- [restartedMain] com.chilly.blog.BlogApplication          : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-06-26 00:32:56.785  INFO 23680 --- [restartedMain] com.chilly.blog.BlogApplication          : The following profiles are active: dev
+2020-06-26 00:32:56.963  INFO 23680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-26 00:32:56.963  INFO 23680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-26 00:32:58.350  INFO 23680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-26 00:32:58.381  INFO 23680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2020-06-26 00:32:59.462  INFO 23680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-26 00:32:59.475  INFO 23680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-26 00:32:59.475  INFO 23680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-26 00:32:59.477  INFO 23680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-26 00:32:59.478  INFO 23680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-06-26 00:32:59.478  INFO 23680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-26 00:32:59.479  INFO 23680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-26 00:32:59.483  INFO 23680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-06-26 00:32:59.716  INFO 23680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-26 00:32:59.721  INFO 23680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2758 ms
+2020-06-26 00:33:00.091  INFO 23680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-26 00:33:00.130  INFO 23680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-26 00:33:00.572  INFO 23680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-26 00:33:00.667  INFO 23680 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-26 00:33:00.803  INFO 23680 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-26 00:33:01.100  INFO 23680 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-26 00:33:01.296  INFO 23680 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-26 00:33:01.400  WARN 23680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-26 00:33:01.549  INFO 23680 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-26 00:33:01.560  INFO 23680 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-26 00:33:01.841  INFO 23680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-26 00:33:02.360  INFO 23680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-26 00:33:02.411  INFO 23680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-26 00:33:02.413  INFO 23680 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-26 00:33:02.414  INFO 23680 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-26 00:33:02.427  INFO 23680 --- [restartedMain] com.chilly.blog.BlogApplication          : Started BlogApplication in 7.013 seconds (JVM running for 9.075)

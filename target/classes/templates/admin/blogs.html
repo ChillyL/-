@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端适应-->
+    <meta name="viewport" content="width=device-width , inital-scale=1.0">
+
+    <title>博客管理</title>
+    <!--CDN版本,不需要下载-->
+    <!--链接semantic UI-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+
+    <!--粒子背景-->
+    <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+    <link type="text/css" href="../../static/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!--粒子背景-->
+    <div class="particle-network-animation"></div>
+
+    <!--导航-->
+    <!--inverted:反转.会变成黑色-->
+    <nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--stackable 适应移动端-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">管理后台</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+
+                <!--头像-->
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                            ChillyLin
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--移动端的列表按钮  toggle black无显示意义，只用于类似id作用-->
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--二级导航-->
+    <div class="ui attached pointing menu m-shadow-small">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+                <a href="#" th:href="@{/admin/blogs}" class="active item">列表</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--中间内容-->
+    <div class="m-padded-tb-big m-container-small">
+        <div class="ui container">
+            <!--提交，头部-->
+<!--            <form action="#" method="post" class="ui segment form basic">-->
+<!--            因为只需要局部刷新，所以不使用form来提交数据，而是通过JQuery-->
+            <div  class="ui segment form basic">
+                <!--查询输入的需要提交的表单-->
+                <input type="hidden" name="page">
+
+                <div class="inline fields">
+                    <div class="field">
+                        <input type="text" name="title" placeholder="标题">
+                    </div>
+                    <div class="field">
+                        <div class="ui labeled action input">
+                            <div class="ui type selection dropdown">
+                                <input type="hidden" name="typeId">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu">
+                                    <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">奇思妙想</div>
+                                </div>
+                            </div>
+                            <button id="clear-btn" class="ui compact button">clear</button>
+                        </div>
+                    </div>
+<!--                    <div class="field">-->
+<!--                        <div class="ui checkbox">-->
+<!--                            <input type="checkbox" id="recommend" name="recommend">-->
+<!--                            <label for="recommend">推荐</label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="field">
+                        <button type="button" class="ui mini teal basic button" id="search-btn"><i class="search icon"></i>搜索</button>
+                    </div>
+                </div>
+            </div>
+<!--            </form>-->
+
+            <div class="ui segment basic" id="table-container">
+                <table th:fragment="blogList" class="ui celled table">
+                    <thead>
+                    <tr align="center">
+                        <th></th>
+                        <th>标题</th>
+                        <th>类型</th>
+                        <th>推荐</th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr align="center" th:each="blog,iterStat : ${pageInfo.list}">
+                        <td th:text="${iterStat.count}">1</td>
+                        <td th:text="${blog.title}">刻意练习清单</td>
+                        <td th:text="${blog.getType().name}">认知升级</td>
+                        <td th:text="${blog.recommend} ? '是':'否'">是</td>
+                        <td th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2020-10-10 09:45</td>
+                        <td>
+                            <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" onclick="return confirm('确定要删除该文章吗？犹豫要删除吗？犹豫就会败北！')"class="ui mini orange basic button">删除</a>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <!--合并单元格-->
+                            <th colspan="6">
+                                <div class="ui inverted divided stackable grid">
+                                    <div class="three wide column" align="center">
+                                        <a class="ui left floated teal basic button" th:href="@{/admin/blogs(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" th:unless="${pageInfo.isFirstPage}">上一页</a>
+                                    </div>
+
+                                    <div class="ten wide column" align="center">
+                                        <p>第 <span th:text="${pageInfo.pageNum}"></span> 页，共 <span th:text="${pageInfo.pages}"></span> 页，有 <span th:text="${pageInfo.total}"></span> 篇博客</p>
+                                    </div>
+
+                                    <div class="three wide column" align="center">
+                                        <a class="ui right floated teal basic button" th:href="@{/admin/blogs(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" th:unless="${pageInfo.isLastPage}">下一页</a>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--底部footer-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <!--分成16份-->
+            <div class="ui inverted divided stackable grid">
+
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 100px">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="six wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email:13267885345@163.com</a>
+                    </div>
+                </div>
+
+                <div class="six wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">ChillyLin</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">哇心凉凉的个人博客,分享各种乱七八糟和奇思妙想</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright©2020 ChillyLin Designed by Lin_xz</p>
+        </div>
+    </footer>
+
+
+    <!--加上/*/-->
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <!--粒子背景-->
+    <script type="text/javascript" src="../static/js/script.js"></script>
+
+    <!--CDN版本,不需要下载-->
+    <!--连接jsdeliver-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <!--链接semantic UI-->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!--/*/</th:block>/*/-->
+
+
+<!--对头菜单移动端的应用-->
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.ui.dropdown').dropdown({
+            on : 'hover'
+        });
+
+
+        //清除搜索的下拉框
+        $('#clear-btn').on('click', function() {
+                $('.ui.type.dropdown')
+                    .dropdown('clear')
+                ;
+        });
+
+
+        //完成动态局部刷新
+        //获取表单中name为page的value值
+        function page(obj) {
+            $("[name='page']").val($(obj).data("page"));
+            loaddata();
+        }
+
+        $("#search-btn").click(function () {
+            $("[name='page']").val(0);
+            loaddata();
+        });
+        function loaddata() {
+            $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+                title : $("[name='title']").val(),
+                type_id : $("[name='typeId']").val(),
+                page : $("[name='page']").val()
+            });
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

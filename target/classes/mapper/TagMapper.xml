@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chilly.blog.mapper.TagMapper"><!--java的mapper路径-->
+    <!--<resultMap id="唯一的标识"（自己起名字） type="映射的pojo对象"(实体类路径)>-->
+    <resultMap id="tagResult" type="com.chilly.blog.entity.Tag">
+        <!--id column="表的主键字段，或者可以为查询语句中的别名字段"  property="映射pojo对象的主键属性" jdbcType="字段类型"(VARCHAR)) -->
+        <id column="tag_id" property="id" javaType="Long" jdbcType="BIGINT"/>
+        <!--result column="表的一个字段（可以为任意表的一个字段）" jdbcType="字段类型" property="映射到pojo对象的一个属性（须为type定义的pojo对象中的一个属性）"-->
+        <result column="tag_name" property="name" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Integer">-->
+    <select id="getTag" resultMap="tagResult" parameterType="long">
+        select *
+        from tag
+        where tag_id =#{id};
+    </select>
+
+    <select id="getTagByName" resultMap="tagResult" parameterType="String">
+        select *
+        from tag
+        where tag_name =#{name};
+    </select>
+
+    <insert id="saveTag" parameterType="com.chilly.blog.entity.Tag">
+        insert into tag
+        values (#{id},#{name});
+    </insert>
+
+    <select id="listTag" resultMap="tagResult">
+        select *
+        from tag;
+    </select>
+
+    <update id="updateTag" parameterType="com.chilly.blog.entity.Tag">
+        update tag set tag_name =#{name}
+        where tag_id =#{id};
+    </update>
+
+    <delete id="deleteTag" parameterType="long">
+        delete from tag
+        where tag_id =#{id};
+    </delete>
+</mapper>

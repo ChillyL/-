@@ -1,0 +1,11 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  #    指定环境
+  profiles:
+    active: dev
+
+# mybatis config
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+

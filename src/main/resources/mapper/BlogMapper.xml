@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chilly.blog.mapper.BlogMapper"><!--java的mapper路径-->
+    <!--<resultMap id="唯一的标识"（自己起名字） type="映射的pojo对象"(实体类路径)>-->
+    <resultMap id="theBlogResult" type="com.chilly.blog.entity.Blog">
+        <!--id column="表的主键字段，或者可以为查询语句中的别名字段"  property="映射pojo对象的主键属性" jdbcType="字段类型"(VARCHAR)) -->
+        <id column="blog_id" property="id" javaType="Long" jdbcType="BIGINT"/>
+        <!--result column="表的一个字段（可以为任意表的一个字段）" jdbcType="字段类型" property="映射到pojo对象的一个属性（须为type定义的pojo对象中的一个属性）"-->
+        <result column="blog_title" property="title" javaType="String" jdbcType="VARCHAR"/>
+        <result column="blog_content" property="content" javaType="String"/>
+        <result column="blog_firstPicture" property="firstPicture" javaType="String" jdbcType="VARCHAR"/>
+        <result column="blog_flag" property="flag" javaType="String" jdbcType="VARCHAR"/>
+        <result column="blog_views" property="views" javaType="Integer" jdbcType="INTEGER"/>
+        <result column="blog_appreciation" property="appreciation" javaType="boolean" jdbcType="TINYINT"/>
+        <result column="blog_shareStatement" property="shareStatement" javaType="boolean" jdbcType="TINYINT"/>
+        <result column="blog_commentabled" property="commentabled" javaType="boolean" jdbcType="TINYINT"/>
+        <result column="blog_published" property="published" javaType="boolean" jdbcType="TINYINT"/>
+        <result column="blog_recommend" property="recommend" javaType="boolean" jdbcType="TINYINT"/>
+
+        <result column="blog_createTime" property="createTime" javaType="Date" jdbcType="TIMESTAMP"/>
+        <result column="blog_updateTime" property="updateTime" javaType="Date" jdbcType="TIMESTAMP"/>
+        <result column="blog_comment_count" property="comment_count" javaType="Integer" jdbcType="INTEGER"/>
+        <result column="type_id" property="type_id" javaType="Long" jdbcType="BIGINT"/>
+        <result column="user_id" property="user_id" javaType="Long" jdbcType="BIGINT"/>
+        <result column="blog_description" property="description" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="theBlogQueryResult" type="com.chilly.blog.entity.query.BlogQuery">
+        <id  column="blog_id" property="id"/>
+        <result column="blog_title" property="title"/>
+        <result column="blog_updateTime" property="updateTime"/>
+        <result column="blog_recommend" property="recommend" />
+        <result column="type_id" property="type_id" />
+        <association property="type" javaType="com.chilly.blog.entity.Type">
+            <id  column="type_id" property="id"/>
+            <result column="type_name" property="name" />
+        </association>
+    </resultMap>
+
+    <!--查询文章管理列表-->
+    <select id="listBlogQuery" resultMap="theBlogQueryResult">
+        select b.blog_id,b.blog_title,b.blog_updateTime,b.blog_recommend,b.type_id,
+        t.type_id,t.type_name
+        from blog b left outer join type t on b.type_id = t.type_id
+        order by b.blog_updateTime desc
+    </select>
+
+    <select id="listBlogByTitleOrType" resultMap="theBlogQueryResult" parameterType="com.chilly.blog.entity.query.BlogQuery">
+        --      bind 元素可以从 OGNL 表达式中创建一个变量并将其绑定到上下文
+        <bind name="pattern" value="'%' + title + '%'" />
+        select b.blog_id,b.blog_title,b.blog_updateTime,b.blog_recommend,b.type_id,
+        t.type_id,t.type_name
+        from blog b , type t
+        <where>
+            <if test="1 == 1">
+                b.type_id = t.type_id
+            </if>
+            <if test="type_id != null">
+                and b.type_id =#{type_id}
+            </if>
+            <if test="title != null">
+                and b.blog_title like #{pattern}
+            </if>
+        </where>
+        order by b.blog_updateTime desc
+    </select>
+
+<!--    用来返回推荐的blog-->
+    <resultMap id="theRecommendBlogResult" type="com.chilly.blog.entity.query.RecommendBlog">
+        <id  column="blog_id" property="id"/>
+        <result column="blog_title" property="title"/>
+        <result column="blog_recommend" property="recommend"/>
+        <result column="blog_firstPicture" property="firstPicture" />
+    </resultMap>
+
+<!--    推荐文章-->
+    <select id="listBlogByRecommend" resultMap="theRecommendBlogResult">
+        select blog_id,blog_title,blog_recommend,blog_firstPicture
+        from blog b
+        where b.blog_recommend = true
+        order by b.blog_updateTime desc limit 5
+    </select>
+
+    <!--<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Integer">-->
+    <select id="getBlog" resultMap="theBlogResult" parameterType="long">
+        select *
+        from blog
+        where blog_id =#{id};
+    </select>
+
+    <select id="listBlog" resultMap="theBlogResult">
+        select *
+        from blog
+    </select>
+
+
+    <insert id="saveBlog" parameterType="com.chilly.blog.entity.Blog">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into blog
+        (blog_title,blog_content,blog_firstPicture,blog_flag,blog_views,blog_appreciation,blog_shareStatement,
+        blog_commentabled,blog_published,blog_recommend,blog_createTime,blog_updateTime,blog_comment_count,type_id,user_id,blog_description)
+        values
+        (#{title},#{content},#{firstPicture},#{flag},#{views},#{appreciation},#{shareStatement},
+        #{commentabled},#{published},#{recommend},#{createTime},#{updateTime},#{comment_count},#{type_id},#{user_id},#{description})
+    </insert>
+
+    <update id="updateBlog" parameterType="com.chilly.blog.entity.Blog">
+        update blog set blog_title=#{title},blog_content=#{content},blog_firstPicture=#{firstPicture},
+        blog_flag=#{flag},blog_views=#{views},blog_appreciation=#{appreciation},blog_shareStatement=#{shareStatement},
+        blog_commentabled=#{commentabled},blog_published=#{published},blog_recommend=#{recommend},
+        blog_updateTime=#{updateTime},blog_comment_count=#{comment_count},type_id=#{type_id},user_id=#{user_id},blog_description=#{description}
+        where blog_id=#{id}
+    </update>
+
+    <delete id="deleteBlog" parameterType="long">
+        delete from blog
+        where blog_id =#{id}
+    </delete>
+
+    <insert id="saveBlogTag" parameterType="long">
+        insert into blog_tags
+        (blog_id,tag_id)
+        values
+        (#{blogId},#{tagId});
+    </insert>
+
+    <delete id="deleteBlogTag" parameterType="long">
+        delete from blog_tags
+        where blog_id =#{blogId}
+    </delete>
+
+    <resultMap id="theTag" type="com.chilly.blog.entity.Tag">
+        <id  column="tag_id" property="id"/>
+        <result column="tag_name" property="name"/>
+    </resultMap>
+
+    <select id="findBlogTag" parameterType="long" resultMap="theTag">
+        SELECT b.tag_id AS tag_id,t.tag_name AS tag_name
+        FROM blog_tags b,tag t
+        WHERE b.tag_id = t.tag_id AND b.blog_id =#{blogId}
+    </select>
+
+    <select id="listBlogByType" parameterType="long" resultMap="theBlogResult">
+        SELECT *
+        from blog
+        where type_id =#{typeId}
+    </select>
+
+    <select id="listBlogByTag" parameterType="long" resultMap="theBlogResult">
+        SELECT *
+        FROM blog b left outer join blog_tags t on b.blog_id = t.blog_id
+        where tag_id =#{tagId}
+    </select>
+
+    <select id="listSearchBlog" parameterType="String" resultMap="theBlogResult">
+        <bind name="pattern" value="'%' + query + '%'" />
+        SELECT *
+        from blog
+        where blog_title like #{pattern}
+    </select>
+</mapper>
