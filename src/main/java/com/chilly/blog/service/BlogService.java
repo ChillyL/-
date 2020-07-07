@@ -17,6 +17,13 @@ public interface BlogService {
     Blog getBlog(Long id);
 
     /**
+     * 从数据库获取Blog,并将其内容中的md,转成HTML，用于前端显示
+     * @param id
+     * @return
+     */
+    Blog getAndConvertBlog(Long id);
+
+    /**
      * 获取所有
      * @return
      */

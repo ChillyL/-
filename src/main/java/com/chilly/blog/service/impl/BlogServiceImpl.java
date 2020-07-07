@@ -4,10 +4,13 @@ import com.chilly.blog.entity.Blog;
 import com.chilly.blog.entity.Tag;
 import com.chilly.blog.entity.query.BlogQuery;
 import com.chilly.blog.entity.query.RecommendBlog;
+import com.chilly.blog.exception.NotFoundException;
 import com.chilly.blog.mapper.AdminLoginMapper;
 import com.chilly.blog.mapper.BlogMapper;
 import com.chilly.blog.mapper.TypeMapper;
 import com.chilly.blog.service.BlogService;
+import com.chilly.blog.util.MarkdownUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -52,6 +55,30 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    public Blog getAndConvertBlog(Long id) {
+
+        Blog b = blogMapper.getBlog(id);
+        if (b == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        //防止操作到数据库，更改了数据库中content
+        Blog blog = new Blog();
+        //复制
+        BeanUtils.copyProperties(b,blog);
+
+        //将content转HTML
+        String content = blog.getContent();
+        blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
+        //补充blog对象的缺少的属性
+        blog.setTags(blogMapper.findBlogTag(blog.getId()));
+        blog.setType(typeMapper.getType(blog.getType_id()));
+        blog.setUser(adminLoginMapper.getBlogAuthor(blog.getUser_id()));
+
+        return blog;
+    }
+
+    @Override
     public List<Blog> listBlog() {
         return indexListBlog();
     }
@@ -75,8 +102,9 @@ public class BlogServiceImpl implements BlogService {
         blog.setViews(0);
         blog.setComment_count(0);
 
-        Long blogId = blogMapper.saveBlog(blog);
+        blogMapper.saveBlog(blog); //通过selectKey返回最近插入的id到blog对象的id
 
+        Long blogId = blog.getId();
         //保存博客相关的标签
         int i = 0;
         List<Long> list = convertToList(tagIds);
@@ -123,6 +151,9 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public int deleteBlog(Long id) {
+        //先删除标签表相应的内容
+        blogMapper.deleteBlogTag(id);
+
         return blogMapper.deleteBlog(id);
     }
 

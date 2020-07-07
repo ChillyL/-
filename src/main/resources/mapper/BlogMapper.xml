@@ -91,6 +91,7 @@
     <select id="listBlog" resultMap="theBlogResult">
         select *
         from blog
+        order by blog_updateTime desc
     </select>
 
 

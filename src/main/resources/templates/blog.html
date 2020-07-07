@@ -5,7 +5,7 @@
     <!--移动端适应-->
     <meta name="viewport" content="width=device-width , inital-scale=1.0">
 
-    <title>博客详情</title>
+    <title th:text="${blog.title}">博客详情</title>
 
     <link href="../static/images/favicon.ico" rel="icon" type="image/x-ico">
     <!--CDN版本,不需要下载-->
@@ -61,40 +61,40 @@
 
     <!--中间内容-->
     <!--加入了动画效果animated xxx-->
-    <div id="waypoint" class="m-padded-tb-big m-container-small">
+    <div class="m-padded-tb-big m-container-small" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">
         <div class="ui container">
             <!--头部-->
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
-                    <div class="item">
+                    <div class="item" id="waypoint">
                         <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
-                        <div class="content">ChillyLin</div>
+                        <div class="content" th:text="${blog.user.nickname}">ChillyLin</div>
                     </div>
                     <div class="item">
-                        <i class="calendar alternate outline icon"></i> 2017-10-01
+                        <i class="calendar alternate outline icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-01-01</span>
                     </div>
                     <div class="item">
-                        <i class="eye icon">2020</i>
+                        <i class="eye icon"></i><span class="m-padded-mini" th:text="${blog.views}">2222</span>
                     </div>
                 </div>
             </div>
 
             <!--图-->
-            <div class="ui attached segment animate__flipOutY">
-                <img src="https://picsum.photos/id/1023/800/450" alt="" class="ui fluid rounded image">
+            <div class="ui attached segment">
+                <img src="https://picsum.photos/id/1023/800/450" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image">
             </div>
 
             <!--文字内容-->
             <div class="ui attached padded segment">
                 <!--转载或原创的标识-->
                 <div class="ui right aligned basic segment">
-                    <div class="ui teal basic label">转载</div>
+                    <div class="ui teal basic label" th:text="${blog.flag}">转载</div>
                 </div>
 
-                <h2 class="ui center aligned header">简单了解一致化排版typo</h2>
+                <h2 class="ui center aligned header" th:text="${blog.title}">简单了解一致化排版typo</h2>
 
                 <!--引入typo,解决中文排版问题-->
-                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large" th:utext="${blog.content}">
                     <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
 
                     <!--代码高亮，显示代码的模块-->
@@ -476,23 +476,25 @@ h5,h6{font-size:1em;}
 
                 <!--标签-->
                 <div class="m-padded-lr-responsive">
-                    <div class="ui basic teal left pointing label">
+                    <div class="ui basic teal left pointing label" th:each="tag : ${blog.getTags()}" th:text="${tag.name}">
                         Java
                     </div>
                 </div>
 
-                <!--赞赏-->
-                <div class="ui center aligned basic segment">
-                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
-                </div>
+                <div th:if="${blog.appreciation}">
+                    <!--赞赏-->
+                    <div class="ui center aligned basic segment">
+                        <button id="payButton" class="ui orange basic circular button">赞赏</button>
+                    </div>
 
-                <!--点击赞赏弹出微信支付-->
-                <div class="ui payQR flowing popup top left transition hidden">
-                    <div class="ui orange basic label">
-                        <div class="ui images" style="font-size: inherit !important;">
-                            <div class="image">
-                                <img src="../static/images/pay.jpg" th:src="@{/images/pay.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">
-                                <div>微信</div>
+                    <!--点击赞赏弹出微信支付-->
+                    <div class="ui payQR flowing popup top left transition hidden">
+                        <div class="ui orange basic label">
+                            <div class="ui images" style="font-size: inherit !important;">
+                                <div class="image">
+                                    <img src="../static/images/pay.jpg" th:src="@{/images/pay.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">
+                                    <div>微信</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -505,8 +507,8 @@ h5,h6{font-size:1em;}
                 <div class="ui middle aligned grid">
                     <div class="eleven wide column">
                         <ui class="list">
-                            <li>作者：spring官网</li>
-                            <li>发表时间：2020-06-09 </li>
+                            <li th:text="|作者：${blog.user.nickname}|">作者：spring官网</li>
+                            <li th:text="|发表时间：${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}|">发表时间：2020-06-09 </li>
                             <li>版权声明</li>
                             <li>转载：请注明</li>
                         </ui>
@@ -704,7 +706,7 @@ h5,h6{font-size:1em;}
     <!--/*/</th:block>/*/-->
 
     <!--对头菜单移动端的应用-->
-    <script>
+    <script th:inline="javascript">
 
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide');
@@ -741,9 +743,11 @@ h5,h6{font-size:1em;}
             position : 'left center'
         });
 
-        //生成二维码
+        //生成二维码,手机阅读该页面
+        var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
+        var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
         var qrcode = new QRCode("qrcode", {
-            text: "http://jindo.dev.naver.com/collie",
+            text: serurl+url,
             width: 110,
             height: 110,
             colorDark : "#000000",

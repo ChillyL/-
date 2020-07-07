@@ -43,14 +43,14 @@
         <!--stackable 适应移动端-->
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item" style="font-family: STSong">ChillyLin</h2>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
             <!--搜索-->
             <div class="right m-item item m-mobile-hide">
-                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank" class="ui form">
+                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon inverted transparent input">
                         <input type="text" name="query" placeholder="Search...." th:value="${query}">
                         <i onclick="document.forms['search'].submit()" class="search link icon"></i>
@@ -117,20 +117,6 @@
     <!--md编辑器-->
     <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
 
-    <script>
-        $('.ui.form').form({
-            fields : {
-                query : {
-                    identifier: 'query',
-                    rules: [{
-                        type : 'empty',
-                        prompt: '标题：请输入需要搜索的内容'
-                    }]
-                }
-
-            }
-        });
-    </script>
 </th:block>
 
 

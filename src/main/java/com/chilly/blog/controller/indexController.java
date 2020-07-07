@@ -37,7 +37,7 @@ public class indexController {
 
     @GetMapping("/")
     public String index(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum, RedirectAttributes attributes){
-        PageHelper.startPage(pageNum,10);
+        PageHelper.startPage(pageNum,5);
         List<Blog> blogList = blogService.listBlog();
         List<Type> typeList = typeService.listTypeAndBlog();
         List<Tag> tagList = tagService.listTagAndBlog();
@@ -53,6 +53,7 @@ public class indexController {
         return "index";
     }
 
+    //搜索
     @PostMapping("/search")
     public String search(String query, Model model,@RequestParam(defaultValue = "1", value = "pageNum") Integer pageNum) {
 
@@ -69,6 +70,14 @@ public class indexController {
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("query", query);
         return "search";
+    }
+
+    //    跳转博客详情页面
+    @GetMapping("/blog/{id}")
+    public String blog(@PathVariable Long id, Model model) {
+        Blog blog = blogService.getAndConvertBlog(id);
+        model.addAttribute("blog",blog);
+        return "blog";
     }
 
 }
