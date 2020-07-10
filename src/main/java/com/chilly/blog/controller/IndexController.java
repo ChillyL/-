@@ -26,7 +26,7 @@ import java.util.logging.Logger;
  * @date 2020/6/17
  */
 @Controller
-public class indexController {
+public class IndexController {
 
     @Autowired
     private BlogService blogService;

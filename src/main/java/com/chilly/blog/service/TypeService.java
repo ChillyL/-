@@ -44,6 +44,13 @@ public interface TypeService {
     List<Type> listTypeAndBlog();
 
     /**
+     * 查单个type对应的Blog
+     * @param id
+     * @return
+     */
+    Type getTypeAndBlog(Long id);
+
+    /**
      * 更改
      * @param type
      * @return

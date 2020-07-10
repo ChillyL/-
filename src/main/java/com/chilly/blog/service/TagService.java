@@ -42,6 +42,13 @@ public interface TagService {
     List<Tag> listTagAndBlog();
 
     /**
+     * 单个查,匹配相应Blog
+     *
+     * @return
+     */
+    Tag getTagAndBlog(Long id);
+
+    /**
      * 更改
      * @param tag
      * @return 成功返回1

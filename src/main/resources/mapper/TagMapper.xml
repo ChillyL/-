@@ -29,7 +29,7 @@
 
     <select id="listTag" resultMap="tagResult">
         select *
-        from tag;
+        from tag
     </select>
 
     <update id="updateTag" parameterType="com.chilly.blog.entity.Tag">

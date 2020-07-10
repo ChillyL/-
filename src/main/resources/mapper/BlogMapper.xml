@@ -173,4 +173,15 @@
             select count(*) from comment c where c.comment_blog_id =#{blogId} and b.blog_id =#{blogId}
         )where b.blog_id =#{blogId}
     </update>
+
+    <select id="listBlogByDate" resultMap="theBlogResult" parameterType="string">
+        select * from blog b
+        where date_format(b.blog_updateTime,'%Y%m') =#{date}
+    </select>
+
+    <select id="listDateAboutBlog" resultType="java.lang.String">
+         select date_format(b.blog_updateTime,'%Y%m') year
+         from blog b
+         group by year order by b.blog_updateTime desc
+    </select>
 </mapper>

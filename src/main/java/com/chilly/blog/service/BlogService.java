@@ -6,6 +6,7 @@ import com.chilly.blog.entity.query.BlogQuery;
 import com.chilly.blog.entity.query.RecommendBlog;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BlogService {
 
@@ -89,4 +90,10 @@ public interface BlogService {
      * @return
      */
     List<Blog> listSearchBlog(String query);
+
+    /**
+     * 按照年月
+     * @return
+     */
+    Map<String,List<Blog>> listBlogGroupDate();
 }

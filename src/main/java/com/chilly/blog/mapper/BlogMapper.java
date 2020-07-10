@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface BlogMapper {
@@ -120,4 +121,17 @@ public interface BlogMapper {
      * @return
      */
     int updateCommentCount(Long blogId);
+
+    /**
+     * 获取同年月的博客列表
+     * @param date
+     * @return
+     */
+    List<Blog> listBlogByDate(String date);
+
+    /**
+     * 获取所有博客的所有存在年月
+     * @return
+     */
+    List<String> listDateAboutBlog();
 }

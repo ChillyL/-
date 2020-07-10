@@ -29,7 +29,7 @@
 
     <select id="listType" resultMap="typeResult">
         select *
-        from type;
+        from type
     </select>
 
     <update id="updateType" parameterType="com.chilly.blog.entity.Type">
