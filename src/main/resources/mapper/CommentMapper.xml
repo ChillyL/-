@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chilly.blog.mapper.CommentMapper"><!--java的mapper路径-->
+    <!--<resultMap id="唯一的标识"（自己起名字） type="映射的pojo对象"(实体类路径)>-->
+    <resultMap id="theCommentResult" type="com.chilly.blog.entity.Comment">
+        <!--id column="表的主键字段，或者可以为查询语句中的别名字段"  property="映射pojo对象的主键属性" jdbcType="字段类型"(VARCHAR)) -->
+        <id column="comment_id" property="id" javaType="Long" jdbcType="BIGINT"/>
+        <!--result column="表的一个字段（可以为任意表的一个字段）" jdbcType="字段类型" property="映射到pojo对象的一个属性（须为type定义的pojo对象中的一个属性）"-->
+        <result column="comment_nickname" property="nickname" jdbcType="VARCHAR"/>
+        <result column="comment_email" property="email" jdbcType="VARCHAR"/>
+        <result column="comment_content" property="content" jdbcType="VARCHAR"/>
+        <result column="comment_avatar" property="avatar" jdbcType="VARCHAR"/>
+        <result column="comment_admin" property="adminComment" javaType="boolean" jdbcType="TINYINT"/>
+        <result column="comment_createTime" property="createTime" javaType="Date" jdbcType="TIMESTAMP"/>
+        <result column="comment_blog_id" property="blogId" javaType="Long" jdbcType="BIGINT"/>
+        <result column="parent_comment_id" property="parentCommentId" javaType="Long" jdbcType="BIGINT"/>
+
+    </resultMap>
+
+    <insert id="saveComment" parameterType="com.chilly.blog.entity.Comment">
+        insert into comment (comment_nickname,comment_email,comment_content,comment_avatar,comment_createTime,
+        comment_blog_id,parent_comment_id,comment_admin)
+        values (#{nickname},#{email},#{content},#{avatar},#{createTime},#{blogId},#{parentCommentId},#{adminComment});
+    </insert>
+
+
+    <select id="findByBlogIdParentIdNull" resultMap="theCommentResult">
+        select *
+        from comment c
+        where c.comment_blog_id =#{blogId} and isnull(c.parent_comment_id)
+        order by c.comment_createTime desc
+    </select>
+
+    <!--查询一级子评论-->
+    <select id="findByBlogIdParentIdNotNull" resultMap="theCommentResult">
+        select *
+        from comment c
+        where c.comment_blog_id =#{blogId} and c.parent_comment_id =#{id}
+        order by c.comment_createTime desc
+    </select>
+
+    <!--查询二级子评论-->
+    <select id="findByBlogIdAndReplayId" resultMap="theCommentResult">
+        select *
+        from comment c
+        where c.comment_blog_id =#{blogId} and c.parent_comment_id =#{childId}
+        order by c.comment_createTime desc
+    </select>
+
+    <!--<select id="findByParentCommentId" resultType="com.star.entity.Comment">-->
+    <!--select c.id cid,c.nickname,c.email,c.content,c.avatar,c.create_time,c.blog_id,c.parent_comment_id-->
+    <!--from myblog.t_comment c-->
+    <!--where c.parent_comment_id = #{parentCommentId}-->
+    <!--</select>-->
+
+    <!--删除评论-->
+    <delete id="deleteComment" >
+        delete from comment where comment_id =#{id}
+    </delete>
+</mapper>

@@ -1,10 +1,12 @@
 package com.chilly.blog.controller;
 
 import com.chilly.blog.entity.Blog;
+import com.chilly.blog.entity.Comment;
 import com.chilly.blog.entity.Tag;
 import com.chilly.blog.entity.Type;
 import com.chilly.blog.entity.query.RecommendBlog;
 import com.chilly.blog.service.BlogService;
+import com.chilly.blog.service.CommentService;
 import com.chilly.blog.service.TagService;
 import com.chilly.blog.service.TypeService;
 import com.github.pagehelper.PageHelper;
@@ -34,6 +36,9 @@ public class indexController {
 
     @Autowired
     private TagService tagService;
+
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/")
     public String index(Model model, @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum, RedirectAttributes attributes){
@@ -76,6 +81,8 @@ public class indexController {
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable Long id, Model model) {
         Blog blog = blogService.getAndConvertBlog(id);
+        List<Comment> comments = commentService.listCommentByBlogId(id);
+        model.addAttribute("comments", comments);
         model.addAttribute("blog",blog);
         return "blog";
     }

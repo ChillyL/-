@@ -75,6 +75,9 @@ public class BlogServiceImpl implements BlogService {
         blog.setType(typeMapper.getType(blog.getType_id()));
         blog.setUser(adminLoginMapper.getBlogAuthor(blog.getUser_id()));
 
+        //文章访问量自增
+        blogMapper.updateViews(blog.getId());
+
         return blog;
     }
 

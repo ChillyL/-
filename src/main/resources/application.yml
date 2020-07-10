@@ -9,3 +9,5 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
 
+# 写死文章评论的头像
+comment.avatar: /images/avatar.jpg

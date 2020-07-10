@@ -1,6 +1,8 @@
 package com.chilly.blog.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @auther ChillyLin
@@ -14,6 +16,65 @@ public class Comment {
     private String content;  //评论内容
     private String avatar;   //头像
     private Date createTime;  //创建时间
+
+    private Long blogId; //关联的博客id
+
+    private boolean adminComment;  //是否是作者回复
+
+    private Long parentCommentId;  //自关联,父级id
+    private String parentNickname; //
+    //回复评论
+    private List<Comment> replyComments = new ArrayList<>();
+    private Comment parentComment;
+
+
+    public List<Comment> getReplyComments() {
+        return replyComments;
+    }
+
+    public void setReplyComments(List<Comment> replyComments) {
+        this.replyComments = replyComments;
+    }
+
+    public Comment getParentComment() {
+        return parentComment;
+    }
+
+    public void setParentComment(Comment parentComment) {
+        this.parentComment = parentComment;
+    }
+
+    public String getParentNickname() {
+        return parentNickname;
+    }
+
+    public void setParentNickname(String parentNickname) {
+        this.parentNickname = parentNickname;
+    }
+
+    public Long getBlogId() {
+        return blogId;
+    }
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
+    public void setBlogId(Long blogId) {
+        this.blogId = blogId;
+    }
+
+    public Long getParentCommentId() {
+        return parentCommentId;
+    }
+
+    public void setParentCommentId(Long parentCommentId) {
+        this.parentCommentId = parentCommentId;
+    }
 
     public Long getId() {
         return id;

@@ -106,4 +106,18 @@ public interface BlogMapper {
      * @return
      */
     List<Blog> listSearchBlog(@Param("query") String query);
+
+    /**
+     * 文章访问量增加
+     * @param blogId
+     * @return
+     */
+    int updateViews(Long blogId);
+
+    /**
+     * 查询出文章评论数量并更新
+     * @param blogId
+     * @return
+     */
+    int updateCommentCount(Long blogId);
 }

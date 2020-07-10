@@ -161,4 +161,16 @@
         from blog
         where blog_title like #{pattern}
     </select>
+
+    <update id="updateViews" parameterType="long">
+        update blog
+        set blog_views = blog_views+1
+        where blog_id =#{blogId}
+    </update>
+
+    <update id="updateCommentCount" parameterType="long">
+        update blog b set b.blog_comment_count = (
+            select count(*) from comment c where c.comment_blog_id =#{blogId} and b.blog_id =#{blogId}
+        )where b.blog_id =#{blogId}
+    </update>
 </mapper>
