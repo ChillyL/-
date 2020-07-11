@@ -125,7 +125,7 @@
 
 *  web
 *  Thymeleaf
-*  JPA
+*  MyBatis
 *  MySQL
 *  Aspects
 *  DevTools
@@ -204,31 +204,7 @@
 
 **1、Markdown 转换 HTML**
 
-*  [commonmark-java  https://github.com/atlassian/commonmark-java](https://github.com/atlassian/commonmark-java)
-*  pom.xml引用commonmark和扩展插件
-
-```xml
-<dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark</artifactId>
-   <version>0.10.0</version>
-</dependency>
-<dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark-ext-heading-anchor</artifactId>
-   <version>0.10.0</version>
-</dependency>
-<dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark-ext-gfm-tables</artifactId>
-   <version>0.10.0</version>
-</dependency>
-```
-
-
-
 **2、评论功能**
-
 
 
 *  评论信息提交与回复功能
